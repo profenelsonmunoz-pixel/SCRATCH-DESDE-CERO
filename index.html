@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch Desde Cero - Aprende a Programar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="https://drive.google.com/uc?export=view&id=1LxQy_2_qlemhf-Xdon2Xpokpji_4a8Zl" alt="IENSECAN Logo"
+        style="height: 40px; border-radius: 50%;"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+      <span class="logo-icon" style="display:none;">🐱</span>
+      <span class="logo-text">Scratch - IENSECAN</span>
+    </div>
+    <div class="navbar-links">
+      <a href="#hero" class="nav-link">Inicio</a>
+      <a href="#temario" class="nav-btn">Ver Temario</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">¡Aprende a Programar Jugando!</h1>
+      <p class="hero-subtitle">
+        Curso Oficial de <span>Scratch</span> para los niños y jóvenes de la <b>Institución Educativa Nuestra Señora de
+          la Candelaria "IENSECAN"</b>.<br>
+        ¡Aprende a programar desde Candelaria, Valle del Cauca para toda Colombia!
+      </p>
+      <button class="btn hero-btn" onclick="document.getElementById('temario').scrollIntoView({ behavior: 'smooth' })">
+        ¡Empieza la Aventura!
+      </button>
+    </div>
+    <div class="hero-image-container">
+      <div class="blob-shape" style="background: transparent; box-shadow: none; animation: none;">
+        <!-- Logo institucional desde Google Drive -->
+        <img src="https://drive.google.com/uc?export=view&id=1LxQy_2_qlemhf-Xdon2Xpokpji_4a8Zl"
+          alt="Logo Institucional IENSECAN"
+          style="max-width: 100%; max-height: 350px; object-fit: contain; filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.2));"
+          id="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección del Temario -->
+  <section id="temario" class="modules-section">
+    <div class="section-header">
+      <h2>Temario 2026 (40 Semanas)</h2>
+      <p>¡Descubre nuestro gran viaje dividido en 3 geniales periodos!</p>
+    </div>
+
+    <div id="temario-container">
+      <!-- Los periodos y tarjetas se inyectarán aquí con JavaScript -->
+    </div>
+  </section>
+
+  <!-- Footer y Certificación Educador Gemini -->
+  <footer class="footer-area">
+    <div class="footer-content">
+      <div class="footer-school">
+        <p><b>Institución Educativa Nuestra Señora de la Candelaria "IENSECAN"</b></p>
+        <p>Candelaria, Valle del Cauca - Colombia</p>
+      </div>
+
+      <div class="footer-certification">
+        <a href="https://www.credential.net/9e851521-ef7d-41a9-ad3f-a7592b24e4f3" target="_blank" class="cert-link"
+          title="Verificar Certificado de Gemini">
+          <img
+            src="https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=l548844r&variant=medium"
+            alt="Gemini Certified Educator Badge" class="cert-img">
+        </a>
+        <div class="cert-text">
+          <p class="cert-name">Prof. NELSON MUÑOZ</p>
+          <p class="cert-title">Educador Certificado de Google Gemini</p>
+          <p class="cert-validity">Validez: 2026 - 2029</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Certificación Oficial Gemini -->
+  <script type="application/ld+json">
+  {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "type": [
+      "VerifiableCredential"
+    ],
+    "id": "https://www.credential.net/9e851521-ef7d-41a9-ad3f-a7592b24e4f3",
+    "name": "Educador certificado de Gemini",
+    "description": "Un Educador Certificado por Google Gemini puede articular y demostrar conocimientos fundamentales sobre los conceptos de IA generativa, así como las principales características y capacidades de Gemini en el contexto educativo. Quienes hayan obtenido esta certificación pueden dar a conocer su estatus con su certificado e insignia personalizados. Esta certificación tiene una validez de 3 años.",
+    "image": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=l548844r&variant=medium",
+    "issuer": {
+      "id": "https://api.accredible.com/v1/verifiable_credential/organizations/17181",
+      "name": "Google for Education"
+    },
+    "validFrom": "2026-01-20T00:00:00Z",
+    "validUntil": "2029-01-20T00:00:00Z",
+    "credentialSubject": {
+      "name": "NELSON MUÑOZ",
+      "identifier": {
+        "type": "IdentityObject",
+        "hashed": true,
+        "identityHash": "sha256$ed732a7fe8a1137a92c2db57aca4340647b2a053ef2bf99e7d3ee5ac676fba51",
+        "identityType": "email",
+        "salt": "a1baaf2732fdbcd1cabe58019aef39c9"
+      }
+    },
+    "completionDate": "2026-01-20",
+    "proof": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "eddsa-rdfc-2022",
+      "created": "2026-01-20T03:51:25Z",
+      "verificationMethod": "did:web:api.accredible.com:v1:verifiable_credential:organizations:17181#ad237a70-dc11-11f0-83da-739ba36dc372",
+      "proofPurpose": "assertionMethod",
+      "proofValue": "zRvfhQaGj97Q3RvhC9sQYC9Dw95pRWGxfj3adzStYAMAV9p8AAtodpe322KFBBZo19nW8E9XLmQx2RqExbMHAsci"
+    }
+  }
+  </script>
+
+  <!-- Modal para las Lecciones (Guías paso a paso) -->
+  <dialog id="lesson-modal" class="lesson-modal">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal-btn">&times;</button>
+
+      <div class="modal-header" id="modal-header">
+        <span style="font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">Institución Educativa Nuestra
+          Señora de la Candelaria "IENSECAN"</span><br>
+        <span style="font-size: 0.85rem; font-weight: 700; opacity: 0.9;">Curso Oficial: Scratch Desde Cero</span>
+        <h2 id="modal-title" style="margin-top: 15px;">Título de la Lección</h2>
+        <span class="modal-week-badge" id="modal-badge">Semana X (Fecha - Fecha)</span>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="modal-guide" id="modal-guide">
+          <!-- La guía paso a paso inyectada mágicamente aquí -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn ok-btn" id="ok-btn">¡Entendido! ¡A Programar!</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Script Principal -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
